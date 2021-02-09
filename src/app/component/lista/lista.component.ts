@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Lista } from 'src/app/models/lista';
 
 @Component({
   selector: 'app-lista',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaComponent implements OnInit {
 
-  constructor() { }
+  listas:Lista[];
+
+  constructor() { 
+    this.listas = [
+      {
+        id:0,
+        title:'Titulo 1'
+      },
+      {
+        id:1,
+        title:'Titulo 2'
+      }
+   ]  
+  }
 
   ngOnInit(): void {
+   
+ 
+
   }
 
 }
