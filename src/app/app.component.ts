@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lista-loja';
+  title:string = 'lista-loja';
+  
+  constructor(){
+    this.title = 'aula-2';
+    this.trocarTitulo('Outro titulo');
+  }
+
+  trocarTitulo(title:string):void{
+    this.title = title;
+  }
 }
+
+
